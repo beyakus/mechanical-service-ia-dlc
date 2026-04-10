@@ -1,0 +1,28 @@
+{
+  "zones": [
+    { "id": "a0000000-0000-4000-8000-000000000001", "name": "Zona Norte", "description": "Zona norte de la ciudad", "isActive": true, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z" },
+    { "id": "a0000000-0000-4000-8000-000000000002", "name": "Zona Centro", "description": "Zona centro de la ciudad", "isActive": true, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z" },
+    { "id": "a0000000-0000-4000-8000-000000000003", "name": "Zona Sur", "description": "Zona sur de la ciudad", "isActive": true, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z" }
+  ],
+  "serviceTypes": [
+    { "id": "b0000000-0000-4000-8000-000000000001", "name": "Mantenimiento preventivo", "description": "Revisión periódica programada", "isActive": true, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z" },
+    { "id": "b0000000-0000-4000-8000-000000000002", "name": "Reparación correctiva", "description": "Reparación de fallas", "isActive": true, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z" },
+    { "id": "b0000000-0000-4000-8000-000000000003", "name": "Instalación", "description": "Instalación de equipos nuevos", "isActive": true, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z" },
+    { "id": "b0000000-0000-4000-8000-000000000004", "name": "Diagnóstico", "description": "Evaluación técnica", "isActive": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-03-01T00:00:00.000Z" }
+  ],
+  "reasons": [
+    { "id": "c0000000-0000-4000-8000-000000000001", "name": "Cliente no disponible", "type": "cancellation", "isActive": true, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z" },
+    { "id": "c0000000-0000-4000-8000-000000000002", "name": "Equipo no accesible", "type": "cancellation", "isActive": true, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z" },
+    { "id": "c0000000-0000-4000-8000-000000000003", "name": "Solicitud del cliente", "type": "cancellation", "isActive": true, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z" },
+    { "id": "c0000000-0000-4000-8000-000000000004", "name": "Técnico enfermo", "type": "reschedule", "isActive": true, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z" },
+    { "id": "c0000000-0000-4000-8000-000000000005", "name": "Repuestos no disponibles", "type": "reschedule", "isActive": true, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z" },
+    { "id": "c0000000-0000-4000-8000-000000000006", "name": "Conflicto de horario", "type": "reschedule", "isActive": true, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z" }
+  ],
+  "technicians": [
+    { "userId": "d0000000-0000-4000-8000-000000000001", "role": "technician", "zoneId": "a0000000-0000-4000-8000-000000000001", "teamId": "e0000000-0000-4000-8000-000000000001", "name": "Carlos Méndez" },
+    { "userId": "d0000000-0000-4000-8000-000000000002", "role": "technician", "zoneId": "a0000000-0000-4000-8000-000000000001", "teamId": "e0000000-0000-4000-8000-000000000001", "name": "Ana García" },
+    { "userId": "d0000000-0000-4000-8000-000000000003", "role": "technician", "zoneId": "a0000000-0000-4000-8000-000000000002", "teamId": "e0000000-0000-4000-8000-000000000002", "name": "Roberto López" },
+    { "userId": "d0000000-0000-4000-8000-000000000004", "role": "supervisor", "zoneId": "a0000000-0000-4000-8000-000000000001", "teamId": null, "name": "Laura Torres" },
+    { "userId": "d0000000-0000-4000-8000-000000000005", "role": "admin", "zoneId": null, "teamId": null, "name": "Miguel Ramírez" }
+  ]
+}
