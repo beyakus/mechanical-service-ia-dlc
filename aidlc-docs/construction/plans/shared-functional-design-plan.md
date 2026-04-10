@@ -42,26 +42,26 @@ X) Other (please describe after [Answer]: tag below)
 ## Plan de Ejecución
 
 ### Fase 1: Domain Entities
-- [ ] Definir entidad Visit con todos sus campos y tipos
-- [ ] Definir entidades de catálogos: ServiceType, Reason, Zone
-- [ ] Definir entidad User/UserContext (datos del usuario autenticado)
-- [ ] Definir entidad HistoryEntry (historial de cambios)
-- [ ] Definir enums: VisitStatus, Role, ReasonType
-- [ ] Documentar relaciones entre entidades
-- [ ] Guardar en `aidlc-docs/construction/shared/functional-design/domain-entities.md`
+- [x] Definir entidad Visit con todos sus campos y tipos
+- [x] Definir entidades de catálogos: ServiceType, Reason, Zone
+- [x] Definir entidad User/UserContext (datos del usuario autenticado)
+- [x] Definir entidad HistoryEntry (historial de cambios)
+- [x] Definir enums: VisitStatus, Role, ReasonType
+- [x] Documentar relaciones entre entidades
+- [x] Guardar en `aidlc-docs/construction/shared/functional-design/domain-entities.md`
 
 ### Fase 2: Business Rules
-- [ ] Definir reglas de transición de estados de visita
-- [ ] Definir reglas de permisos por rol (quién puede hacer qué)
-- [ ] Definir reglas de validación de datos (campos obligatorios, formatos, rangos)
-- [ ] Definir reglas de catálogos (no eliminar con visitas asociadas, toggle activo/inactivo)
-- [ ] Definir reglas de filtrado por rol (técnico ve las suyas, supervisor su zona, admin todo)
-- [ ] Guardar en `aidlc-docs/construction/shared/functional-design/business-rules.md`
+- [x] Definir reglas de transición de estados de visita
+- [x] Definir reglas de permisos por rol (quién puede hacer qué)
+- [x] Definir reglas de validación de datos (campos obligatorios, formatos, rangos)
+- [x] Definir reglas de catálogos (no eliminar con visitas asociadas, toggle activo/inactivo)
+- [x] Definir reglas de filtrado por rol (técnico ve las suyas, supervisor su zona, admin todo)
+- [x] Guardar en `aidlc-docs/construction/shared/functional-design/business-rules.md`
 
 ### Fase 3: Business Logic Model
-- [ ] Definir Zod schemas de input (Create, Reschedule, Cancel, Complete, Finalize, Reassign)
-- [ ] Definir Zod schemas de output (Visit, PaginatedResult, ApiError)
-- [ ] Definir Zod schemas de filtros (VisitFilters, CalendarFilters, AnalyticsFilters)
-- [ ] Definir Zod schemas de catálogos (CRUD inputs/outputs)
-- [ ] Identificar propiedades testables para PBT (PBT-01)
-- [ ] Guardar en `aidlc-docs/construction/shared/functional-design/business-logic-model.md`
+- [x] Definir Zod schemas de input (Create, Reschedule, Cancel, Complete, Finalize, Reassign)
+- [x] Definir Zod schemas de output (Visit, PaginatedResult, ApiError)
+- [x] Definir Zod schemas de filtros (VisitFilters, CalendarFilters, AnalyticsFilters)
+- [x] Definir Zod schemas de catálogos (CRUD inputs/outputs)
+- [x] Identificar propiedades testables para PBT (PBT-01)
+- [x] Guardar en `aidlc-docs/construction/shared/functional-design/business-logic-model.md`
