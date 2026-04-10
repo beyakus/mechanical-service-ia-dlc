@@ -33,7 +33,7 @@
 - [x] INCEPTION - User Stories
 - [x] INCEPTION - Workflow Planning
 - [x] INCEPTION - Application Design - EXECUTE
-- [ ] INCEPTION - Units Generation - EXECUTE
+- [x] INCEPTION - Units Generation - EXECUTE
 - [ ] CONSTRUCTION - Functional Design - EXECUTE (per unit)
 - [ ] CONSTRUCTION - NFR Requirements - EXECUTE (per unit)
 - [ ] CONSTRUCTION - NFR Design - EXECUTE (per unit)

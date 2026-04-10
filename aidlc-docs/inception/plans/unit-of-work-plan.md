@@ -32,23 +32,23 @@ X) Other (please describe after [Answer]: tag below)
 ## Plan de Ejecución (se ejecutará tras aprobación)
 
 ### Fase 1: Definición de Unidades
-- [ ] Definir unidades de trabajo según respuestas
-- [ ] Asignar componentes del Application Design a cada unidad
-- [ ] Documentar responsabilidades y alcance de cada unidad
-- [ ] Guardar en `aidlc-docs/inception/application-design/unit-of-work.md`
+- [x] Definir unidades de trabajo según respuestas
+- [x] Asignar componentes del Application Design a cada unidad
+- [x] Documentar responsabilidades y alcance de cada unidad
+- [x] Guardar en `aidlc-docs/inception/application-design/unit-of-work.md`
 
 ### Fase 2: Dependencias entre Unidades
-- [ ] Mapear dependencias entre unidades
-- [ ] Definir orden de ejecución
-- [ ] Identificar puntos de integración
-- [ ] Guardar en `aidlc-docs/inception/application-design/unit-of-work-dependency.md`
+- [x] Mapear dependencias entre unidades
+- [x] Definir orden de ejecución
+- [x] Identificar puntos de integración
+- [x] Guardar en `aidlc-docs/inception/application-design/unit-of-work-dependency.md`
 
 ### Fase 3: Mapeo de Stories a Unidades
-- [ ] Asignar cada user story (US-1.1 a US-6.3) a su unidad correspondiente
-- [ ] Verificar cobertura completa (todas las stories asignadas)
-- [ ] Guardar en `aidlc-docs/inception/application-design/unit-of-work-story-map.md`
+- [x] Asignar cada user story (US-1.1 a US-6.3) a su unidad correspondiente
+- [x] Verificar cobertura completa (todas las stories asignadas)
+- [x] Guardar en `aidlc-docs/inception/application-design/unit-of-work-story-map.md`
 
 ### Fase 4: Validación
-- [ ] Verificar que todas las stories están asignadas
-- [ ] Verificar que las dependencias son coherentes con el orden de ejecución
-- [ ] Verificar que cada unidad tiene un alcance manejable
+- [x] Verificar que todas las stories están asignadas
+- [x] Verificar que las dependencias son coherentes con el orden de ejecución
+- [x] Verificar que cada unidad tiene un alcance manejable
