@@ -298,3 +298,64 @@ Por favor, sigue la metodología AI-DLC para desarrollar este proyecto."
 **Context**: CONSTRUCTION - Code Generation (shared), Part 2 complete
 
 ---
+
+## Code Generation (shared) - Approval Received
+**Timestamp**: 2026-04-09T00:28:00Z
+**User Input**: "Continuar al Siguiente Stage - Aprobar code generation y proceder a Functional Design (Unit 2: api)"
+**AI Response**: Code generation (shared) approved. Proceeding to Functional Design for Unit 2: api.
+**Context**: CONSTRUCTION - Code Generation (shared) approved, transitioning to Functional Design (api)
+
+---
+
+## Functional Design (api) - Answers Received
+**Timestamp**: 2026-04-09T00:29:00Z
+**User Input**: "ya acomplete el archivo api-functional-design-plan.md continua con la siguiente fase"
+**AI Response**: Read answers: Q1=C (declarative route map), Q2=A (static JSON seed, stateless). No ambiguities. Proceeding to generate functional design artifacts.
+**Context**: CONSTRUCTION - Functional Design (api), answers collected
+
+---
+
+## Functional Design (api) - Artifacts Generated
+**Timestamp**: 2026-04-09T00:30:00Z
+**AI Response**: Generated 3 functional design artifacts for api unit: business-logic-model.md (request flow, declarative route map, error handling with 6 error types, structured logging, stateless seed data), business-rules.md (9 rule sets: endpoint auth, role filtering, reschedule/cancel/complete/finalize/reassign logic, catalog toggle, seed data structure), domain-entities.md (ParsedEvent, ApiResponse, MockDataStore, security headers, PBT-01 properties: 2 round-trip, 5 invariant, 1 stateful). All plan checkboxes complete.
+**Context**: CONSTRUCTION - Functional Design (api) complete
+
+---
+
+## Functional Design (api) - Approval Received
+**Timestamp**: 2026-04-09T00:31:00Z
+**User Input**: "Continuar al Siguiente Stage - Aprobar diseño funcional y proceder a NFR Requirements (api)"
+**AI Response**: Functional design (api) approved. Proceeding to NFR Requirements for api unit.
+**Context**: CONSTRUCTION - Functional Design (api) approved, transitioning to NFR Requirements (api)
+
+---
+
+## NFR Requirements (api) - Answers Received
+**Timestamp**: 2026-04-09T00:32:00Z
+**User Input**: "ya acomplete el archivo api-nfr-requirements-plan.md continua con la siguiente fase"
+**AI Response**: Read answers: Q1=A (esbuild), Q2=A (CORS in API Gateway). No ambiguities. Proceeding to generate NFR artifacts.
+**Context**: CONSTRUCTION - NFR Requirements (api), answers collected
+
+---
+
+## NFR Requirements (api) - Artifacts Generated
+**Timestamp**: 2026-04-09T00:33:00Z
+**AI Response**: Generated 2 NFR artifacts for api unit: nfr-requirements.md (6 NFRs: security, performance, observability, testing, resilience, supply chain), tech-stack-decisions.md (esbuild bundling, Clerk Backend SDK, CORS in API Gateway, security compliance 15/15 rules addressed, PBT-01/PBT-09 compliant). All plan checkboxes complete.
+**Context**: CONSTRUCTION - NFR Requirements (api) complete
+
+---
+
+## NFR Requirements (api) - Approval Received
+**Timestamp**: 2026-04-09T00:34:00Z
+**User Input**: "Continuar al Siguiente Stage - Aprobar NFR requirements y proceder a NFR Design (api)"
+**AI Response**: NFR Requirements (api) approved. Proceeding to NFR Design for api unit. No additional questions needed — all design decisions resolved.
+**Context**: CONSTRUCTION - NFR Requirements (api) approved, transitioning to NFR Design (api)
+
+---
+
+## NFR Design (api) - Artifacts Generated
+**Timestamp**: 2026-04-09T00:35:00Z
+**AI Response**: Generated 2 NFR design artifacts for api unit: nfr-design-patterns.md (8 patterns: auth middleware chain, global error handler, structured logger, declarative route map, response builder with security headers, role-based filtering, input validation gateway, seed data module loading), logical-components.md (4 module groups: handlers, middleware, services, repositories, utils + component diagram). Security compliance: 11/15 compliant, 4 deferred to infra. PBT: PBT-01, PBT-09 compliant.
+**Context**: CONSTRUCTION - NFR Design (api) complete
+
+---
