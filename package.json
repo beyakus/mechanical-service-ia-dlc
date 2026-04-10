@@ -1,0 +1,26 @@
+{
+  "name": "visits-portal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build:shared": "cd shared && npm run build",
+    "build:api": "cd api && npm run build",
+    "build:app": "cd app && npm run build",
+    "build": "npm run build:shared && npm run build:api && npm run build:app",
+    "test:shared": "cd shared && npm test",
+    "test:api": "cd api && npm test",
+    "test:app": "cd app && npm test",
+    "test": "npm run test:shared && npm run test:api && npm run test:app",
+    "lint:shared": "cd shared && npm run lint",
+    "lint:api": "cd api && npm run lint",
+    "lint:app": "cd app && npm run lint",
+    "lint": "npm run lint:shared && npm run lint:api && npm run lint:app",
+    "typecheck": "npm run typecheck:shared && npm run typecheck:api && npm run typecheck:app",
+    "typecheck:shared": "cd shared && npm run typecheck",
+    "typecheck:api": "cd api && npm run typecheck",
+    "typecheck:app": "cd app && npm run typecheck"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
