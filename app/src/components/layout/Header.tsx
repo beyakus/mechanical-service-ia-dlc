@@ -17,20 +17,18 @@ export function Header() {
   const userRole = useUserRole();
   const { signOut } = useClerk();
 
-  if (!userRole) return null;
-
   return (
     <header className="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-6" data-testid="header">
       <div />
       <div className="flex items-center gap-4">
         <span
-          className={`px-2 py-1 rounded-full text-xs font-medium ${roleBadgeColors[userRole.role] ?? ''}`}
+          className={`px-2 py-1 rounded-full text-xs font-medium ${roleBadgeColors[userRole?.role ?? ''] ?? 'bg-gray-100 text-gray-800'}`}
           data-testid="header-role-badge"
         >
-          {roleLabels[userRole.role] ?? userRole.role}
+          {roleLabels[userRole?.role ?? ''] ?? 'Sin rol'}
         </span>
         <span className="text-sm text-gray-700" data-testid="header-user-name">
-          {userRole.name}
+          {userRole?.name ?? 'Usuario'}
         </span>
         <button
           onClick={() => signOut()}

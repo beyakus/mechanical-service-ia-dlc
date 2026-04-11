@@ -14,11 +14,9 @@ export function Sidebar() {
   const userRole = useUserRole();
   const location = useLocation();
 
-  if (!userRole) return null;
-
-  const visibleItems = navItems.filter((item) =>
-    item.roles.includes(userRole.role),
-  );
+  const visibleItems = userRole
+    ? navItems.filter((item) => (item.roles as readonly string[]).includes(userRole.role))
+    : navItems.filter((item) => (item.roles as readonly string[]).includes('admin'));
 
   return (
     <aside className="w-64 bg-gray-900 text-white min-h-screen p-4" data-testid="sidebar">

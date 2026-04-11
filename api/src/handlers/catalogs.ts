@@ -7,8 +7,8 @@ import { validateInput } from '../utils/validation.js';
 import { Logger } from '../utils/logger.js';
 import {
   CreateServiceTypeInputSchema, CreateReasonInputSchema, CreateZoneInputSchema,
-} from '../../../shared/src/index.js';
-import type { UserContext } from '../../../shared/src/index.js';
+} from '@visits/shared';
+import type { UserContext } from '@visits/shared';
 import * as catalogService from '../services/catalog.service.js';
 
 const routes: RouteDefinition[] = [

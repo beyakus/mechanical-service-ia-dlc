@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import * as analyticsService from '../../services/analytics.service.js';
-import type { UserContext } from '../../../../shared/src/index.js';
+import type { UserContext } from '@visits/shared';
 
 const adminUser: UserContext = {
   userId: 'd0000000-0000-4000-8000-000000000005',

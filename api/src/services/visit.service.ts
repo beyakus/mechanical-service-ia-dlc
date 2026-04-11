@@ -2,8 +2,8 @@ import type {
   Visit, CreateVisitInput, RescheduleInput, CancelInput,
   CompleteInput, FinalizeInput, ReassignInput,
   VisitFilters, CalendarVisit, PaginatedResult, UserContext,
-} from '../../../shared/src/index.js';
-import { VisitStatus, isValidTransition } from '../../../shared/src/index.js';
+} from '@visits/shared';
+import { VisitStatus, isValidTransition } from '@visits/shared';
 import { NotFoundError, ForbiddenError, ConflictError } from '../utils/errors.js';
 import * as visitRepo from '../repositories/mock-visit.repository.js';
 import * as catalogRepo from '../repositories/mock-catalog.repository.js';
@@ -30,7 +30,7 @@ function checkVisitAccess(visit: Visit, user: UserContext): void {
   throw new ForbiddenError('You do not have access to this visit');
 }
 
-export function list(filters: VisitFilters, user: UserContext): PaginatedResult<Visit> {
+export function list(filters: Partial<VisitFilters>, user: UserContext): PaginatedResult<Visit> {
   let visits = visitRepo.getAllVisits();
   visits = filterByRole(visits, user);
   visits = visitRepo.filterVisits(visits, filters);

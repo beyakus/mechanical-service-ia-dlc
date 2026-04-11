@@ -52,4 +52,4 @@ export const createZoneInputArb = fc.record({
   description: fc.option(descriptionArb, { nil: undefined }),
 });
 
-export { uuidArb, nameArb, reasonTypeArb };
+export { reasonTypeArb };

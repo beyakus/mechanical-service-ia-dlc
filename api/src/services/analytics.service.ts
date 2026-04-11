@@ -1,5 +1,5 @@
-import type { VisitSummary, ReasonCount, TrendData, UserContext } from '../../../shared/src/index.js';
-import { VisitStatus } from '../../../shared/src/index.js';
+import type { VisitSummary, ReasonCount, TrendData, UserContext } from '@visits/shared';
+import { VisitStatus } from '@visits/shared';
 import * as visitRepo from '../repositories/mock-visit.repository.js';
 
 function filterByRoleAndDate(

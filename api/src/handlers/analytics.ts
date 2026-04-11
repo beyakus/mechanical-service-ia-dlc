@@ -5,8 +5,8 @@ import { parseApiGatewayEvent, matchRoute, type RouteDefinition, type ParsedEven
 import { buildResponse } from '../utils/response.js';
 import { validateInput } from '../utils/validation.js';
 import { Logger } from '../utils/logger.js';
-import { AnalyticsFiltersSchema } from '../../../shared/src/index.js';
-import type { UserContext } from '../../../shared/src/index.js';
+import { AnalyticsFiltersSchema } from '@visits/shared';
+import type { UserContext } from '@visits/shared';
 import * as analyticsService from '../services/analytics.service.js';
 
 const routes: RouteDefinition[] = [

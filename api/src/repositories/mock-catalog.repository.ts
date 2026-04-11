@@ -1,4 +1,4 @@
-import type { ServiceType, Reason, Zone, UserContext } from '../../../shared/src/index.js';
+import type { ServiceType, Reason, Zone, UserContext } from '@visits/shared';
 import seedData from './seed-data.json' assert { type: 'json' };
 
 const store = Object.freeze({

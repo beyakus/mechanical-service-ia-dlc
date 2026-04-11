@@ -1,4 +1,4 @@
-import type { UserContext } from '../../shared/src/index.js';
+import type { UserContext } from '@visits/shared';
 import type { APIGatewayProxyResult } from 'aws-lambda';
 
 export interface ParsedEvent {
@@ -69,10 +69,10 @@ export function matchRoute(
 export function parseApiGatewayEvent(event: {
   httpMethod: string;
   path: string;
-  pathParameters?: Record<string, string> | null;
-  queryStringParameters?: Record<string, string> | null;
+  pathParameters?: Record<string, string | undefined> | null;
+  queryStringParameters?: Record<string, string | undefined> | null;
   body?: string | null;
-  headers?: Record<string, string> | null;
+  headers?: Record<string, string | undefined> | null;
   requestContext?: { requestId?: string };
 }): ParsedEvent {
   let body: unknown = null;
@@ -84,13 +84,22 @@ export function parseApiGatewayEvent(event: {
     }
   }
 
+  const cleanRecord = (rec?: Record<string, string | undefined> | null): Record<string, string> => {
+    if (!rec) return {};
+    const result: Record<string, string> = {};
+    for (const [k, v] of Object.entries(rec)) {
+      if (v !== undefined) result[k] = v;
+    }
+    return result;
+  };
+
   return {
     method: event.httpMethod,
     path: event.path,
-    pathParameters: event.pathParameters ?? {},
-    queryStringParameters: event.queryStringParameters ?? {},
+    pathParameters: cleanRecord(event.pathParameters),
+    queryStringParameters: cleanRecord(event.queryStringParameters),
     body,
-    headers: event.headers ?? {},
+    headers: cleanRecord(event.headers),
     requestId: event.requestContext?.requestId ?? 'unknown',
   };
 }

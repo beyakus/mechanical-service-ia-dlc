@@ -1,5 +1,5 @@
-import type { Visit, VisitFilters, CalendarVisit, PaginatedResult } from '../../../shared/src/index.js';
-import { VisitStatus } from '../../../shared/src/index.js';
+import type { Visit, VisitFilters, CalendarVisit, PaginatedResult } from '@visits/shared';
+import { VisitStatus } from '@visits/shared';
 
 // Seed visits loaded statically
 const seedVisits: Visit[] = generateSeedVisits();

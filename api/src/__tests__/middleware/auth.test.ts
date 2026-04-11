@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { extractToken, checkRole } from '../../middleware/auth.js';
-import type { UserContext } from '../../../../shared/src/index.js';
+import type { UserContext } from '@visits/shared';
 
 describe('extractToken', () => {
   it('should extract Bearer token', () => {

@@ -1,4 +1,4 @@
-import type { ServiceType, Reason, Zone } from '../../../shared/src/index.js';
+import type { ServiceType, Reason, Zone } from '@visits/shared';
 import * as catalogRepo from '../repositories/mock-catalog.repository.js';
 
 export function listServiceTypes(includeInactive = false): ServiceType[] {

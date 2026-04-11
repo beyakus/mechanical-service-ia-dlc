@@ -9,8 +9,8 @@ import {
   VisitFiltersSchema, CalendarFiltersSchema,
   CreateVisitInputSchema, RescheduleInputSchema, CancelInputSchema,
   CompleteInputSchema, FinalizeInputSchema, ReassignInputSchema,
-} from '../../../shared/src/index.js';
-import type { UserContext } from '../../../shared/src/index.js';
+} from '@visits/shared';
+import type { UserContext } from '@visits/shared';
 import * as visitService from '../services/visit.service.js';
 
 const routes: RouteDefinition[] = [
