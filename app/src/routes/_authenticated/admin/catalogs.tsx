@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { createFileRoute } from '@tanstack/react-router';
-import { useServiceTypes, useReasons, useZones, useCreateServiceType, useCreateReason, useCreateZone } from '@/hooks/useCatalogs';
+import { useServiceTypes, useReasons, useZones } from '@/hooks/useCatalogs';
 import { DataTable } from '@/components/ui/DataTable';
 import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
 

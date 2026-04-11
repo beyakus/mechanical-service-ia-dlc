@@ -15,7 +15,6 @@ export interface UserRole {
 
 export function useUserRole(): UserRole | null {
   const { user } = useUser();
-  const { getToken } = useClerkAuth();
 
   if (!user) return null;
 

@@ -1,5 +1,5 @@
 import type {
-  Visit, CreateVisitInput, RescheduleInput, CancelInput,
+  Visit, RescheduleInput, CancelInput,
   CompleteInput, FinalizeInput, ReassignInput,
   VisitFilters, CalendarVisit, PaginatedResult, UserContext,
 } from '@visits/shared';

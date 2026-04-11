@@ -1,5 +1,4 @@
 import { z } from 'zod';
-import { VisitStatus } from '../enums/index.js';
 
 const uuidSchema = z.string().uuid();
 const dateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Must be YYYY-MM-DD');
